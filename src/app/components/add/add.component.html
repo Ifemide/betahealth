@@ -1,0 +1,193 @@
+<div class="container-fluid ml-0 h-100 px-40px py-30px">
+  <div class="add-content">
+    <h2 class="mb-40px">Add</h2>
+    <div class="add-menu d-flex flex-wrap">
+      <button class="menu" (click)="switchView('enrollee')" [ngClass]="{'active-menu': view == 'enrollee'}">
+        <i class="material-icons">hotel</i>Enrollees
+      </button>
+      <button class="menu" (click)="switchView('provider')" [ngClass]="{'active-menu': view == 'provider'}">
+        <i class="material-icons">local_shipping</i>Care Provider
+      </button>
+      <button class="menu" (click)="switchView('staff')" [ngClass]="{'active-menu': view == 'staff'}">
+        <i class="material-icons">group</i>HMO Staff
+      </button>
+      <button class="menu" (click)="switchView('organisation')" [ngClass]="{'active-menu': view == 'organisation'}">
+        <i class="material-icons">domain</i>Organisation
+      </button>
+      <button class="menu" (click)="switchView('dependant')" [ngClass]="{'active-menu': view == 'dependant'}">
+        <i class="material-icons">hotel</i>Dependant
+      </button>
+      <button class="menu" (click)="switchView('claim')" [ngClass]="{'active-menu': view == 'claim'}">
+        <i class="material-icons">touch_app</i>Claim
+      </button>
+    </div>
+  </div>
+  <div class="add-forms">
+    <div class="enrollee-form" *ngIf="view == 'enrollee'">
+      <form action="#">
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Enrollee Last Name">
+          <input type="text" class="input" placeholder="Enrollee First Name">
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Enrollee Middle Name">
+          <input type="number" class="input" placeholder="Phone Number">
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Email Address">
+          <input type="text" class="input" placeholder="Registration ID">
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input-long" placeholder="Home Address">
+        </div>
+        <div class="mb-10px d-flex">
+          <div class="input-dropdown mr-20px">
+            <p class="mb-0">Choose Plan</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+          <div class="input-dropdown">
+            <p class="mb-0">Choose Care Provider</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px d-flex">
+          <div class="input-dropdown mr-20px">
+            <p class="mb-0">Choose Organisation</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+          <div class="input-file">
+            <div><i class="material-icons">person_outline</i></div>
+            <label>Add Picture<input type="file"></label>
+          </div>
+        </div>
+        <button class="add-button">Add Enrollee</button>
+      </form>
+    </div>
+    <div class="provider-form" *ngIf="view == 'provider'">
+      <form action="#">
+        <div class="mb-10px d-flex">
+          <input type="text" class="input mr-20px" placeholder="Name of Care Provider">
+          <div class="input-dropdown">
+            <p class="mb-0">Choose HMO</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px d-flex">
+          <input type="text" class="input mr-20px" placeholder="Registration ID">
+          <div class="input-dropdown">
+            <p class="mb-0">Choose Type</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Email Address">
+          <input type="number" class="input" placeholder="Phone Number">
+        </div>
+        <div class="mb-10px d-flex">
+          <input type="text" class="input mr-20px" placeholder="Office Address">
+          <div class="input-dropdown">
+            <p class="mb-0">Choose Band</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px" *ngIf="bankSubForm">
+          <div class="mb-10px">
+            <input type="text" class="input mr-20px" placeholder="Account Name">
+            <input type="text" class="input" placeholder="Account Number">
+          </div>
+          <div>
+            <input type="text" class="input-long" placeholder="Choose Bank">
+          </div>
+        </div>
+        <p class="bank-detail mb-0 color-blue d-flex align-items-center" (click)="showBankDetail()"
+          *ngIf="!bankSubForm">
+          <i class="material-icons font-18 mr-5px">add_circle_outline</i>
+          <span class="font-12">Add Care Provider Bank Detail</span>
+        </p>
+        <p class="bank-detail mb-0 color-blue d-flex align-items-center" (click)="showBankDetail()" *ngIf="bankSubForm">
+          <i class="material-icons font-18 mr-5px">remove_circle_outline</i>
+          <span class="font-12">Remove Care Provider Bank Detail</span>
+        </p>
+        <button class="add-button">Add Care Provider</button>
+      </form>
+    </div>
+    <div class="staff-form" *ngIf="view == 'staff'">
+      <form action="#">
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Staff Last Name">
+          <input type="text" class="input" placeholder="Staff First Name">
+        </div>
+        <div class="mb-10px d-flex">
+          <input type="text" class="input mr-20px" placeholder="Staff Middle Name">
+          <div class="input-dropdown">
+            <p class="mb-0">Staff Role</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px">
+          <div class="input-file">
+            <div><i class="material-icons">person_outline</i></div>
+            <label>Add Picture<input type="file"></label>
+          </div>
+        </div>
+        <button class="add-button">Add HMO Staff</button>
+      </form>
+    </div>
+    <div class="organ-form" *ngIf="view == 'organisation'">
+      <form action="#">
+        <div class="mb-10px">
+          <input type="text" class="input-long" placeholder="Name of Organisation">
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Email Address">
+          <input type="number" class="input" placeholder="Phone Number">
+        </div>
+        <div class="mb-10px d-flex">
+          <input type="text" class="input mr-20px" placeholder="Registration ID">
+          <div class="input-dropdown">
+            <p class="mb-0">Choose HMO</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input-long" placeholder="Office Address">
+        </div>
+        <button class="add-button">Add Organisation</button>
+      </form>
+    </div>
+    <div class="dependant-form" *ngIf="view == 'dependant'">
+      <form action="#">
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Dependant Last Name">
+          <input type="text" class="input" placeholder="Dependant First Name">
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Dependant Middle Name">
+          <input type="number" class="input" placeholder="Phone Number">
+        </div>
+        <div class="mb-10px">
+          <input type="text" class="input mr-20px" placeholder="Email Address">
+          <input type="text" class="input" placeholder="Registration ID">
+        </div>
+        <div class="mb-10px d-flex">
+          <div class="input-dropdown mr-20px">
+            <p class="mb-0">Choose Enrollee</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+          <div class="input-dropdown">
+            <p class="mb-0">Choose Care Provider</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div class="mb-10px">
+          <div class="input-file">
+            <div><i class="material-icons">person_outline</i></div>
+            <label>Add Picture<input type="file"></label>
+          </div>
+        </div>
+        <button class="add-button">Add Dependant</button>
+      </form>
+    </div>
+    <div class="claim-form" *ngIf="view == 'claim'"></div>
+  </div>
+</div>

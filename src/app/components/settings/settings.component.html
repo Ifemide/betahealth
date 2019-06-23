@@ -1,0 +1,42 @@
+<div class="container-fluid ml-0 h-100 px-40px py-30px">
+  <h2 class="mb-40px">Settings</h2>
+  <div class="settings d-flex">
+    <div class="sub-menu">
+      <button class="menu" (click)="switchView('general')"
+        [ngClass]="{'active-menu': view == 'general'}">General</button>
+      <button class="menu" (click)="switchView('drugs')" [ngClass]="{'active-menu': view == 'drugs'}">Drugs</button>
+      <button class="menu" (click)="switchView('diseases')"
+        [ngClass]="{'active-menu': view == 'diseases'}">Diseases</button>
+      <button class="menu" (click)="switchView('bands')" [ngClass]="{'active-menu': view == 'bands'}">Bands</button>
+      <button class="menu" (click)="switchView('plans')" [ngClass]="{'active-menu': view == 'plans'}">Plans</button>
+      <button class="menu" (click)="switchView('treatment')"
+        [ngClass]="{'active-menu': view == 'treatment'}">Treatment</button>
+      <button class="menu" (click)="switchView('bank')" [ngClass]="{'active-menu': view == 'bank'}">Bank
+        Details</button>
+    </div>
+    <div class="menu-settings">
+      <div class="general" *ngIf="view == 'general'">
+        <form action="#">
+          <div class="input-image">
+            <label>
+              <div>
+                <img src="assets/images/paul.jpg" alt="">
+                <!-- <div> -->
+                <!-- <p class="mb-0 text-center font-12">Change<br>Avatar</p> -->
+                <p class="mb-0 text-center font-12">Choose<br>Avatar</p>
+                <!-- </div> -->
+              </div>
+              <input type="file">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="drugs" *ngIf="view == 'drugs'"></div>
+      <div class="diseases" *ngIf="view == 'diseases'"></div>
+      <div class="bands" *ngIf="view == 'bands'"></div>
+      <div class="plans" *ngIf="view == 'plans'"></div>
+      <div class="treatment" *ngIf="view == 'treatment'"></div>
+      <div class="bank" *ngIf="view == 'bank'"></div>
+    </div>
+  </div>
+</div>

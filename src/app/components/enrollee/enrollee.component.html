@@ -1,0 +1,223 @@
+<div class="container-fluid ml-0 h-100 px-0">
+  <div class="top-bar px-40px pt-30px d-flex align-items-start justify-content-between">
+    <div class="user-info">
+      <div class="top-line d-flex align-items-end">
+        <h2 class="mb-0">
+          <span class="color-muted">Enrollees</span>
+          <span class="medium-bold"> :: </span>Reddington Raymond Paul
+        </h2>
+        <p class="color-green font-14 medium-bold mb-0">ENR985RDE/01</p>
+      </div>
+      <div class="info d-flex">
+        <div class="pic-balance">
+          <img src="assets/images/paul.jpg" alt="User Profile">
+          <p class="mb-0 text-center font-12 medium-bold">Balance<br>
+            <span class="color-red">N382,670.00</span>
+          </p>
+        </div>
+        <div class="list-info">
+          <div class="plan-premium font-12 d-flex">
+            <p class="mb-0 color-blue medium-bold mr-5px">Blue Platinum Plan</p>
+            <p class="mb-0 regular-light">(N23,000.00 Monthly Premium)</p>
+          </div>
+          <p class="mb-0 font-14 regular-light mb-5px">23, Adeola Odeku Street, Harmony Estate, Victoria Island, Lagos
+            State
+          </p>
+          <div class="mail-number d-flex font-12 regular-light">
+            <p class="mb-0 mr-10px">redraypaul@gmail.com</p>
+            <p class="mb-0">080945678213</p>
+          </div>
+          <div class="organization d-flex font-12 mb-5px">
+            <p class="mb-0 mr-5px regular-light">Best Tech Solutions</p>
+            <button class="color-green medium-bold">(change organization)</button>
+          </div>
+          <div class="care-provider d-flex align-items-center">
+            <div class="dropdown mr-5px">
+              <p class="mb-0">Pharmacy</p>
+              <button><i class="material-icons">keyboard_arrow_down</i></button>
+            </div>
+            <p class="mb-0 font-14 regular-light">Providence Pharmacy</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="actions d-flex align-items-end flex-column">
+      <button class="btn-fill-blue font-12">Add Claim</button>
+      <button class="btn-bone-blue font-12">Add Dependant</button>
+      <button class="btn-bone-gray font-12">Edit Profile</button>
+    </div>
+  </div>
+
+
+  <div class="enrollee-body d-flex mt-60px px-40px">
+    <div class="sub-menus d-flex flex-column">
+      <button class="menu" (click)="switchView('claims')" [ngClass]="{'active-menu': view == 'claims'}">
+        <i class="material-icons">touch_app</i>Claims
+      </button>
+      <button class="menu" (click)="switchView('dependants')" [ngClass]="{'active-menu': view == 'dependants'}">
+        <i class="material-icons">hotel</i>Dependants
+      </button>
+    </div>
+    <div class="display-section w-100p" *ngIf="view == 'claims'">
+      <div class="filter-pagination d-flex justify-content-between">
+        <div class="filter d-flex">
+          <div class="dropdown date">
+            <p>10/10/2018</p>
+            <button><i class="material-icons">calendar_today</i></button>
+          </div>
+          <div class="dropdown date">
+            <p>14/11/2018</p>
+            <button><i class="material-icons">calendar_today</i></button>
+          </div>
+        </div>
+        <div class="pagination d-flex font-12 align-items-center">
+          <p class="mb-0 medium-bold">185 claims</p>
+          <button class="page-left bg-green"><i
+              class="material-icons color-white font-18">keyboard_arrow_left</i></button>
+          <p class="regular-light mb-0 page-no">04 of 10</p>
+          <button class="page-right bg-green"><i
+              class="material-icons color-white font-18">keyboard_arrow_right</i></button>
+          <div class="dropdown page-count">
+            <p>20</p>
+            <button><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+      </div>
+      <div class="claims mt-40px medium-bold d-flex flex-wrap">
+        <div class="claim-card mr-40px mb-40px">
+          <div class="main-view">
+            <div class="card-head mb-20px">
+              <p class="mb-0 color-green text-uppercase">May 24, 2019</p>
+              <p class="mb-0">Odin Son Hospital</p>
+            </div>
+            <div class="claim-list mb-20px">
+              <p class="mb-10px">
+                <span class="bt-badge bg-gray mr-10px">0</span>
+                Treatment (N0.00)
+              </p>
+              <p class="mb-10px color-blue">
+                <span class="bt-badge bg-blue mr-10px">2</span>
+                Diagnosis
+              </p>
+              <p class="mb-10px color-blue">
+                <span class="bt-badge bg-blue mr-10px">3</span>
+                Lab Tests
+              </p>
+              <p class="mb-10px color-blue">
+                <span class="bt-badge bg-blue mr-10px">7</span>
+                Prescriptions
+              </p>
+              <p class="mb-0">
+                <span class="bt-badge bg-gray mr-10px">0</span>
+                Comments
+              </p>
+            </div>
+            <div class="extras mb-20px">
+              <div class="ref-code d-flex align-items-start mb-10px">
+                <i class="material-icons font-10 mr-10px">brightness_1</i>
+                <p class="mb-0 mt--4px">
+                  <span class="color-blue">Referral Code</span><br>
+                  <span class="text-uppercase">Oihe243</span>
+                </p>
+              </div>
+              <div class="dependant d-flex align-items-start">
+                <i class="material-icons font-10 mr-10px">brightness_1</i>
+                <p class="mb-0 mt--4px">
+                  <span class="color-blue">Dependant</span><br>
+                  Reddington Mary Rose
+                </p>
+              </div>
+            </div>
+            <div class="card-actions d-flex justify-content-between">
+              <button class="text-uppercase medium-bold color-green">Approve Claim</button>
+              <button class="text-uppercase medium-bold color-muted">Disapprove</button>
+            </div>
+          </div>
+        </div>
+        <div class="claim-card mr-40px mb-40px">
+          <div class="sub-view font-12 regular-light pl-20px pb-20px d-flex flex-column">
+            <div class="sub-view-head">
+              <p class="mb-0">
+                Diagnosis (2)
+              </p>
+              <button class="clear">
+                <i class="material-icons color-white font-18">clear</i>
+              </button>
+            </div>
+            <div class="claim-body pr-20px d-flex flex-column align-items-start">
+              <div class="posts">
+                <p class="mb-10px">Ben Olumide (Dr.)<br>
+                  Yellow saturation in the lower eye lids. It
+                  may be a case of conjunctivitis
+                </p>
+                <p class="mb-10px">Ben Olumide (Dr.)<br>
+                  Patient confirmed to be suffering from a
+                  case of <span class="drug-name">Astigmatism</span>
+                </p>
+              </div>
+              <div class="post-form align-self-end">
+                <form action="#" class="">
+                  <input type="text" class="border-less pl-10px mb-5px" placeholder="Enter diagnosis here..">
+                  <div class="d-flex align-self-end">
+                    <div class="dropdown poster mr-5px">
+                      <p>Choose Doctor</p>
+                      <button><i class="material-icons">keyboard_arrow_down</i></button>
+                    </div>
+                    <button class="add-post font-12 text-uppercase color-blue medium-bold">Add</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display-section w-100p" *ngIf="view == 'dependants'">
+      <div class="dependants d-flex flex-wrap">
+        <div class="dependant text-center font-12">
+          <img src="assets/images/mary.jpg" class="mb-10px" alt="picture of dependant">
+          <p class="mb-0 font-14">Reddington Mary Rose</p>
+          <p class="mb-10px">redraypaul@gmail.com<br>080945678213</p>
+          <button class="text-uppercase color-red medium-bold">Delete Dependant</button>
+        </div>
+        <div class="dependant text-center font-12">
+          <img src="assets/images/sharon.jpg" class="mb-10px" alt="picture of dependant">
+          <p class="mb-0 font-14">Reddington Sharon May</p>
+          <p class="mb-10px">redraypaul@gmail.com<br>080945678213</p>
+          <button class="text-uppercase color-red medium-bold">Delete Dependant</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="claims">
+    <div class="enrollee">
+      <div class="enrollee-top-bar">
+        <p class="mb-0 color-green medium-bold font-14">
+          <span class="bt-badge bg-green">E</span>
+          ENR985RDE/01
+        </p>
+        <div class="edit-delete">
+          <button class="edit">
+            <i class="material-icons color-white font-18">border_color</i>
+          </button>
+          <button class="delete">
+            <i class="material-icons color-white font-18">delete</i>
+          </button>
+        </div>
+      </div>
+      <div class="enrollee-body">
+        <p class="font-14">Reddingtom Raymond Paul</p>
+        <p class="font-12">
+          <span class="bt-badge bg-red">Active</span>
+          Blue Platinum Plan
+        </p>
+        <p class="color-blue medium-bold font-12">
+          <span class="bt-badge bg-blue">2</span>
+          Active Claims
+        </p>
+      </div>
+    </div>
+  </div> -->
+</div>

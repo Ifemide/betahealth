@@ -1,0 +1,211 @@
+.container-fluid .top-bar .user-info h2 {
+    font-weight: 200;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.container-fluid .top-bar .user-info h2 span:first-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container-fluid .top-bar {
+    background-color: #F7F7F7;
+    padding-bottom: 30px;
+}
+
+.container-fluid .top-bar .actions {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container-fluid .top-bar .actions button {
+    margin-bottom: 10px;
+}
+
+.container-fluid .top-bar .actions button:last-child {
+    margin-bottom: 0px;
+}
+
+.container-fluid .top-bar .user-info .top-line {
+    margin-bottom: 20px;
+}
+
+.container-fluid .top-bar .info .pic-balance {
+    margin-right: 20px;
+}
+
+.container-fluid .top-bar .info .pic-balance img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-fluid .enrollee-body .display-section .claims .claim-card {
+    width: 270px;
+    height: 350px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.enrollee-body .display-section .claims .claim-card .main-view {
+    padding: 20px;
+}
+
+.enrollee-body .display-section .claims .claim-card .card-actions button:hover {
+    opacity: 0.8;
+}
+
+.enrollee-body .display-section .dependants .dependant {
+    width: 270px;
+    height: 195px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.enrollee-body .display-section .dependants .dependant img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+.filter-pagination .filter .search-box {
+    border-bottom: 2px solid #15643F;
+    height: 32px;
+    padding: 0px 10px;
+}
+
+.filter-pagination .filter .search-box input {
+    width: 240px;
+    border: none;
+}
+
+.filter-pagination .filter .search-box input::placeholder {
+    color: #9FA1A4;
+}
+
+.filter-pagination .filter .search-box i,
+.filter-pagination .filter .plans button i {
+    color: #9FA1A4;
+}
+
+.filter-pagination .filter .date:first-child {
+    margin-right: 24px;
+}
+
+.filter-pagination .pagination .page-count {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.filter-pagination .pagination .page-no {
+    border-top: 0.5px solid #D5D5D5;
+    border-bottom: 0.5px solid #D5D5D5;
+    height: 32px;
+    width: 52px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.filter-pagination .pagination .page-left,
+.filter-pagination .pagination .page-right {
+    height: 32px;
+    width: 24px;
+}
+
+.filter-pagination .pagination .page-left {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-left: 10px;
+}
+
+.filter-pagination .pagination .page-right {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.enrollee-body .sub-menus {
+    margin-right: 80px;
+}
+
+
+
+
+
+
+
+
+
+.claim-card .sub-view {
+    height: 100%;
+}
+
+.claim-card .sub-view-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.claim-card .sub-view-head .clear {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.claim-card .sub-view-head .clear {
+    background-color: #5E5F61;
+    border-top-right-radius: 4px;
+}
+
+.claim-card .sub-view-head .clear:hover {
+    background-color: #B52419;
+}
+
+.claim-card .sub-view .claim-body {
+    flex: 1;
+}
+
+.claim-card .sub-view .claim-body .post-form .border-less {
+    border: none;
+}
+
+.claim-card .sub-view .claim-body .post-form .border-less::placeholder {
+    color: #9FA1A4;
+}
+
+.claim-card .sub-view .claim-body .post-form .poster {
+    width: 180px;
+}
+
+.claim-card .sub-view .claim-body .post-form .add-post {
+    width: 46px;
+    border-radius: 2px;
+}
+
+.claim-card .sub-view .claim-body .post-form .add-post:hover {
+    background-color: #F7F7F7;
+}

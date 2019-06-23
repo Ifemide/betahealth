@@ -1,1 +1,396 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    color: #5E5F61;
+}
+
+.bg-success {
+    background-color: #15643F !important;
+}
+
+.pt-30px {
+    padding-top: 30px;
+}
+
+.px-40px {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.py-30px {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pl-10px {
+    padding-left: 10px;
+}
+
+.pl-20px {
+    padding-left: 20px;
+}
+
+.pl-40px {
+    padding-left: 40px;
+}
+
+.pb-20px {
+    padding-bottom: 20px;
+}
+
+.pr-20px {
+    padding-right: 20px;
+}
+
+.mt-40px {
+    margin-top: 40px;
+}
+
+.mt-60px {
+    margin-top: 60px;
+}
+
+.mt--4px {
+    margin-top: -4px;
+}
+
+.mr-5px {
+    margin-right: 5px;
+}
+
+.mr-20px {
+    margin-right: 20px;
+}
+
+.mr-40px {
+    margin-right: 40px;
+}
+
+.mb-5px {
+    margin-bottom: 5px;
+}
+
+.mb-10px {
+    margin-bottom: 10px;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+
+.mb-40px {
+    margin-bottom: 40px;
+}
+
+.mr-10px {
+    margin-right: 10px;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.bg-D5D5D5 {
+    background-color: #D5D5D5;
+}
+
+.bg-5E5F61 {
+    background-color: #5E5F61;
+}
+
+/* p {
+    margin-bottom: 0px !important;
+} */
+
+.bt-badge {
+    border-radius: 2px;
+    height: 16px;
+    font-size: 12px;
+    padding: 1px 7px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.bg-blue {
+    background-color: #4A6D79;
+}
+
+.bg-red {
+    background-color: #B52419;
+}
+
+.bg-green {
+    background-color: #15643F;
+}
+
+.bg-gray {
+    background-color: #5E5F61;
+}
+
+.bg-muted {
+    background-color: #9FA1A4;
+}
+
+.color-red {
+    color: #952618;
+}
+
+.color-green {
+    color: #15643F;
+}
+
+.color-blue {
+    color: #4A6D79;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-gray {
+    color: #5E5F61;
+}
+
+.color-muted {
+    color: #9FA1A4;
+}
+
+.medium-bold {
+    font-weight: 600;
+}
+
+.regular-light {
+    font-weight: 300;
+}
+
+.font-10 {
+    font-size: 10px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+button {
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 32px;
+    width: 120px;
+    border: 0.5px solid #D5D5D5;
+    border-radius: 2px;
+    padding: 0px 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.dropdown p {
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #9FA1A4;
+}
+
+.dropdown button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown button i.material-icons {
+    color: #9FA1A4;
+    font-size: 18px;
+}
+
+.menu {
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: #5E5F61;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu i.material-icons {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.menu:hover {
+    background-color: #F7F7F7;
+}
+
+.menu.active-menu {
+    background-color: #5E5F61;
+    color: #ffffff;
+}
+
+/* .menu.active-menu i {
+    color: #ffffff;
+} */
+
+button.btn-fill-blue {
+    width: 140px;
+    height: 40px;
+    background-color: #4A6D79;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+button.btn-bone-blue {
+    width: 140px;
+    height: 40px;
+    border: 2.5px solid #4A6D79;
+    background-color: #ffffff;
+    color: #4A6D79;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+button.btn-bone-gray {
+    width: 140px;
+    height: 40px;
+    border: 2.5px solid #5E5F61;
+    background-color: #ffffff;
+    color: #5E5F61;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.drug-name {
+    color: #4A6D79;
+    text-decoration: underline;
+}
+
+input.input, input.input-long {
+    width: 200px;
+    height: 40px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 0.5px solid rgba(255,255,255,0.2);
+    padding-left: 20px;
+    outline: none;
+}
+
+input.input-long {
+    width: 420px;
+}
+
+input.input::placeholder, input.input-long::placeholder {
+    color: #9FA1A4;
+}
+
+.input-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    /* font-weight: 300; */
+    cursor: pointer;
+}
+
+.input-dropdown p {
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #9FA1A4;
+}
+
+.input-dropdown button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-dropdown button i.material-icons {
+    color: #9FA1A4;
+    font-size: 18px;
+}
+
+.input-file {
+    display: flex;
+    align-items: center;
+}
+
+.input-file div {
+    width: 40px;
+    height: 40px;
+    background-color: #F7F7F7;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.input-file div i.material-icons {
+    color: #9FA1A4;
+}
+
+.input-file label {
+    font-size: 12px;
+    color: #9FA1A4;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.input-file label input {
+    display: none;
+}
+
+button.add-button {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #4A6D79;
+    color: #ffffff;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
+button.add-button:hover {
+    opacity: 0.8;
+    /* background-color: #ffffff;
+    color: #4A6D79;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16); */
+}

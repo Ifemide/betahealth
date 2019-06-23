@@ -1,0 +1,31 @@
+.container-fluid h1 {
+    font-weight: 200;
+    font-size: 27px;
+}
+
+.top-icons {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.top-icons:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.active-menu-item {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.faint {
+    opacity: 0.8;
+}

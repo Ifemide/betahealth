@@ -1,0 +1,136 @@
+.container-fluid h2 {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.filter-pagination .filter .search-box {
+    border-bottom: 2px solid #15643F;
+    height: 32px;
+    padding: 0px 10px;
+}
+
+.filter-pagination .filter .search-box input {
+    width: 240px;
+    border: none;
+}
+
+.filter-pagination .filter .search-box input::placeholder {
+    color: #9FA1A4;
+}
+
+.filter-pagination .filter .search-box i,
+.filter-pagination .filter .plans button i {
+    color: #9FA1A4;
+}
+
+.filter-pagination .filter .plans {
+    width: 120px;
+    margin-left: 24px;
+}
+
+.filter-pagination .pagination .page-count {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.filter-pagination .pagination .page-no {
+    border-top: 0.5px solid #D5D5D5;
+    border-bottom: 0.5px solid #D5D5D5;
+    height: 32px;
+    width: 52px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.filter-pagination .pagination .page-left,
+.filter-pagination .pagination .page-right {
+    height: 32px;
+    width: 24px;
+}
+
+.filter-pagination .pagination .page-left {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-left: 10px;
+}
+
+.filter-pagination .pagination .page-right {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+
+
+
+
+
+.enrollees {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.enrollees .enrollee {
+    width: 270px;
+    height: 125px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.enrollees .enrollee:first-child {
+    margin-left: 0px;
+}
+
+.enrollees .enrollee .enrollee-top-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.enrollee .enrollee-top-bar .edit-delete {
+    display: flex;
+}
+
+.enrollee .enrollee-top-bar .edit-delete .edit,
+.enrollee .enrollee-top-bar .edit-delete .delete {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.enrollee .enrollee-top-bar .edit-delete .edit:hover i {
+    color: #15643F;
+}
+
+.enrollee .enrollee-top-bar .edit-delete .delete:hover {
+    background-color: #B52419;
+}
+
+.enrollee .enrollee-top-bar .edit-delete .edit {
+    background-color: #D5D5D5;
+}
+
+.enrollee .enrollee-top-bar .edit-delete .delete {
+    background-color: #5E5F61;
+    border-top-right-radius: 4px;
+}
+
+.enrollees .enrollee .enrollee-body p {
+    margin-bottom: 5px;
+}
+
+.enrollees .enrollee .enrollee-body p:last-child {
+    margin-bottom: 0px;
+}
